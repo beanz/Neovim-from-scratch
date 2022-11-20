@@ -68,3 +68,6 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
+-- SSR --
+keymap("x", "<leader>r", "<cmd>lua require(\"ssr\").open()<CR>", opts)
+keymap("n", "<leader>r", "<cmd>lua require(\"ssr\").open()<CR>", opts)

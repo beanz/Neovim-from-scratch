@@ -84,6 +84,7 @@ return packer.startup(function(use)
   use "fatih/vim-go"
   use "rust-lang/rust.vim"
   use "simrat39/rust-tools.nvim"
+  use "vim-crystal/vim-crystal"
 
   use "cshuaimin/ssr.nvim"
 

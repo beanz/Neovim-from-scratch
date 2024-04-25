@@ -8,6 +8,7 @@ function M.config()
     { nil, "<M-1>", "Horizontal Terminal", "horizontal", 0.3 },
     { nil, "<M-2>", "Vertical Terminal", "vertical", 0.4 },
     { nil, "<M-3>", "Float Terminal", "float", nil },
+    { 'pel', "<M-4>", "Perl Terminal", "horizontal", 0.3 },
   }
 
   local function get_buf_size()
@@ -69,7 +70,7 @@ function M.config()
   end
 
   require("toggleterm").setup {
-    size = 20,
+    size = 10,
     open_mapping = [[<c-\>]],
     hide_numbers = true, -- hide the number column in toggleterm buffers
     shade_filetypes = {},
@@ -78,7 +79,7 @@ function M.config()
     start_in_insert = true,
     insert_mappings = true, -- whether or not the open mapping applies in insert mode
     persist_size = false,
-    direction = "float",
+    direction = "horizontal",
     close_on_exit = true, -- close the terminal window when the process exits
     shell = nil, -- change the default shell
     float_opts = {

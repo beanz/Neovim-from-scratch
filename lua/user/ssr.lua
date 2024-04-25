@@ -1,11 +1,11 @@
 local M = {
   "cshuaimin/ssr.nvim",
-  lazy = true,
+  lazy = "false",
+  name = "ssr",
 }
 
 function M.config() end
-  local ssr = require "ssr"
-  ssr.setup {
+  require("ssr").setup {
     min_width = 50,
     min_height = 5,
     keymaps = {

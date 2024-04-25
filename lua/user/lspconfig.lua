@@ -76,6 +76,15 @@ function M.config()
     "bashls",
     "jsonls",
     "yamlls",
+    "clangd",
+    "gopls",
+    "golangci_lint_ls",
+    "rust_analyzer",
+    "pylsp",
+    "perlnavigator",
+    "crystalline",
+    "dockerls",
+    "zls",
   }
 
   local default_diagnostic_config = {
